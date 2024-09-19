@@ -39,7 +39,7 @@
                 </a>
                 <div class="text-sm">
                     <p class="text-gray-900 dark:text-white leading-none mb-1">By: {{ $post['author'] }}</p>
-                    <p class="text-gray-600 dark:text-white">12 September 2024</p>
+                    <p class="text-gray-600 dark:text-white">{{ $post->created_at->format('j F Y') }}</p>
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ Str::limit($post['body'], 100)}}</p>
                 <a href="/posts/{{ $post['slug'] }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

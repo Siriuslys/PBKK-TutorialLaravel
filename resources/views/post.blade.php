@@ -61,12 +61,12 @@
                             <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
                                 <div>
                                     <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">{{ $post['author'] }}</a>
-                                    <p class="text-base text-gray-500 dark:text-gray-400"><time pubdate datetime="2022-02-08" title="February 8th, 2022">Feb. 8, 2022</time></p>
+                                    <p class="text-base text-gray-500 dark:text-gray-400">{{ $post->created_at->format('j F Y') }}</p>
                                 </div>
                             </div>
                         </address>
                     </header>
-                    <p class="lead">Flowbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.</p>
+                    <p class="lead">{{ $post['strapline'] }}</p>
                     <p>{{ $post['body'] }}</p>
                 </article>
             </div>

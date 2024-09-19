@@ -16,10 +16,10 @@ Route::get('/posts', function () {
     return view('posts', ['title' => 'Posts', 'posts' => Post::all()]);
 });
 
-Route::get('/posts/{slug}', function($slug) {
+Route::get('/posts/{post:slug}', function(Post $post) {
 
     // Using Arr::first to find the post by slug
-    $post = Post::find($slug);
+    // $post = Post::find($id);
 
     if (!$post) {
         abort(404);  // Return a 404 error if the post is not found
