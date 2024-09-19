@@ -7,7 +7,7 @@
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
               <a href="https://flowbite.com/" class="flex items-center">
-                  <img src="img/logo_jennie.png" class="h-8 me-3" alt="FlowBite Logo" />
+                  <img src={{ asset('img/logo_jennie.png') }} class="h-8 me-3" alt="FlowBite Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Discography</span>
               </a>
           </div>

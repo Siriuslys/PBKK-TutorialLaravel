@@ -50,10 +50,10 @@
         </main>
     </article> --}}
 
-    <article class="mx-auto">
-        <main class="lg:py-24 justify-center px-52 mt-1 max-w-screen-xl pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+    <article class="mx-auto bg-white ">
+        <main class="lg:py-24 justify-center mt-1 max-w-screen-xl pt-8 pb-16 lg:pt-16 lg:pb-24  dark:bg-gray-900 antialiased">
             <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
-                <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                <article class="mx-auto px-16 max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
                     <a href="/posts" class="font-medium hover:underline text-gray-700">&laquo;Back to posts</a>
                     <header class="mb-4 lg:mb-6 not-format">
                         <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">{{ $post['title'] }}</h1>
